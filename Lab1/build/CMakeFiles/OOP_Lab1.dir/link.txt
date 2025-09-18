@@ -1,1 +1,0 @@
-/usr/local/bin/c++ CMakeFiles/OOP_Lab1.dir/src/main.cpp.o CMakeFiles/OOP_Lab1.dir/src/format_time.cpp.o -o OOP_Lab1 
