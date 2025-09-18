@@ -4,6 +4,14 @@
 
 
 int main(){
-    std::string str;
-    std::cout << convertTime(str);
+    std::string period;
+    int hour, minute;
+    
+    std::cin >> hour;
+    std::cin >> minute;
+    std::cin >> period;
+    
+    std::cout << convertTime(hour, minute, period) << std::endl;
+    
+    return 0;
 }
