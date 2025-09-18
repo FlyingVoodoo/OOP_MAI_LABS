@@ -4,7 +4,14 @@
 #include <sstream>
 #include "../include/format_time.h"
 
-std::string convertTime(int hour, int minute, const std::string& period) {
+std::string convertTime(const std::string& timeStr) {
+    int hour, minute;
+    std::string period;
+    char sep;
+
+    std::stringstream ss(timeStr);
+    ss >> hour >> sep >> minute >> period;
+
     if (period == "pm") {
         if (hour != 12) {
             hour += 12;
@@ -17,9 +24,9 @@ std::string convertTime(int hour, int minute, const std::string& period) {
         return "Invalid period";
     }
 
-    std::stringstream ss;
-    ss << std::setw(2) << std::setfill('0') << hour;
-    ss << std::setw(2) << std::setfill('0') << minute;
-    return ss.str();
+    std::stringstream output_ss;
+    output_ss << std::setw(2) << std::setfill('0') << hour << ":";
+    output_ss << std::setw(2) << std::setfill('0') << minute;
+    return output_ss.str();
 
 }

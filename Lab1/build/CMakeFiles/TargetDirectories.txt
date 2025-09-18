@@ -1,3 +1,4 @@
 /workspaces/OOP_MAI_LABS/Lab1/build/CMakeFiles/OOP_Lab1.dir
+/workspaces/OOP_MAI_LABS/Lab1/build/CMakeFiles/test_format_time.dir
 /workspaces/OOP_MAI_LABS/Lab1/build/CMakeFiles/edit_cache.dir
 /workspaces/OOP_MAI_LABS/Lab1/build/CMakeFiles/rebuild_cache.dir

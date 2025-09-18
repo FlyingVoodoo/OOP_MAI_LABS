@@ -129,12 +129,26 @@ OOP_Lab1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_Lab1.dir/build.make CMakeFiles/OOP_Lab1.dir/build
 .PHONY : OOP_Lab1/fast
 
+#=============================================================================
+# Target rules for targets named test_format_time
+
+# Build rule for target.
+test_format_time: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_format_time
+.PHONY : test_format_time
+
+# fast build rule for target.
+test_format_time/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_time.dir/build.make CMakeFiles/test_format_time.dir/build
+.PHONY : test_format_time/fast
+
 src/format_time.o: src/format_time.cpp.o
 .PHONY : src/format_time.o
 
 # target to build an object file
 src/format_time.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_Lab1.dir/build.make CMakeFiles/OOP_Lab1.dir/src/format_time.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_time.dir/build.make CMakeFiles/test_format_time.dir/src/format_time.cpp.o
 .PHONY : src/format_time.cpp.o
 
 src/format_time.i: src/format_time.cpp.i
@@ -143,6 +157,7 @@ src/format_time.i: src/format_time.cpp.i
 # target to preprocess a source file
 src/format_time.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_Lab1.dir/build.make CMakeFiles/OOP_Lab1.dir/src/format_time.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_time.dir/build.make CMakeFiles/test_format_time.dir/src/format_time.cpp.i
 .PHONY : src/format_time.cpp.i
 
 src/format_time.s: src/format_time.cpp.s
@@ -151,6 +166,7 @@ src/format_time.s: src/format_time.cpp.s
 # target to generate assembly for a file
 src/format_time.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_Lab1.dir/build.make CMakeFiles/OOP_Lab1.dir/src/format_time.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_time.dir/build.make CMakeFiles/test_format_time.dir/src/format_time.cpp.s
 .PHONY : src/format_time.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -177,6 +193,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_Lab1.dir/build.make CMakeFiles/OOP_Lab1.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+test/test_format_time.o: test/test_format_time.cpp.o
+.PHONY : test/test_format_time.o
+
+# target to build an object file
+test/test_format_time.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_time.dir/build.make CMakeFiles/test_format_time.dir/test/test_format_time.cpp.o
+.PHONY : test/test_format_time.cpp.o
+
+test/test_format_time.i: test/test_format_time.cpp.i
+.PHONY : test/test_format_time.i
+
+# target to preprocess a source file
+test/test_format_time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_time.dir/build.make CMakeFiles/test_format_time.dir/test/test_format_time.cpp.i
+.PHONY : test/test_format_time.cpp.i
+
+test/test_format_time.s: test/test_format_time.cpp.s
+.PHONY : test/test_format_time.s
+
+# target to generate assembly for a file
+test/test_format_time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_time.dir/build.make CMakeFiles/test_format_time.dir/test/test_format_time.cpp.s
+.PHONY : test/test_format_time.cpp.s
+
+test/test_main.o: test/test_main.cpp.o
+.PHONY : test/test_main.o
+
+# target to build an object file
+test/test_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_time.dir/build.make CMakeFiles/test_format_time.dir/test/test_main.cpp.o
+.PHONY : test/test_main.cpp.o
+
+test/test_main.i: test/test_main.cpp.i
+.PHONY : test/test_main.i
+
+# target to preprocess a source file
+test/test_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_time.dir/build.make CMakeFiles/test_format_time.dir/test/test_main.cpp.i
+.PHONY : test/test_main.cpp.i
+
+test/test_main.s: test/test_main.cpp.s
+.PHONY : test/test_main.s
+
+# target to generate assembly for a file
+test/test_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_time.dir/build.make CMakeFiles/test_format_time.dir/test/test_main.cpp.s
+.PHONY : test/test_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +250,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... OOP_Lab1"
+	@echo "... test_format_time"
 	@echo "... src/format_time.o"
 	@echo "... src/format_time.i"
 	@echo "... src/format_time.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... test/test_format_time.o"
+	@echo "... test/test_format_time.i"
+	@echo "... test/test_format_time.s"
+	@echo "... test/test_main.o"
+	@echo "... test/test_main.i"
+	@echo "... test/test_main.s"
 .PHONY : help
 
 

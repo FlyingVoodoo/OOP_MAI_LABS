@@ -3,6 +3,6 @@
 
 #include <string>
 
-std::string convertTime(int hour, int minute, const std::string& period);
+std::string convertTime(const std::string& timeStr);
 
 #endif

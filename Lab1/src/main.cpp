@@ -4,14 +4,10 @@
 
 
 int main(){
-    std::string period;
-    int hour, minute;
+    std::string inputTime;
+    std::getline(std::cin, inputTime);
     
-    std::cin >> hour;
-    std::cin >> minute;
-    std::cin >> period;
-    
-    std::cout << convertTime(hour, minute, period) << std::endl;
+    std::cout << convertTime(inputTime) << std::endl;
     
     return 0;
 }
